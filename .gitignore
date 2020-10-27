@@ -1,0 +1,5 @@
+downloader.log
+*.swp
+download/*
+cookies.txt
+package/
