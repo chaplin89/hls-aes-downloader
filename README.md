@@ -13,6 +13,17 @@ This example expect a wesite that provides video-courses and expose the followin
   * Parameters
     * lesson_id: UUID for the specified video
   * Description: Return information about the video with the specified UUID. This includes for example the master playlist, subtitles etc.
+  
+## Folder structure
+The script create files with the following hieararchy:
+* ./download: Root folder for download
+  * ./download/trainer-uuid: Folder that cotains courses belonging to a specific trainer
+     * ./download/trainer-uuid/course-uuid: Folder that cotains videos belonging to a specific course
+     * ./download/trainer-uuid/metadata.json: Information about this trainer.
+       * ./download/trainer-uuid/course-uuid/metadata.json: information about this course
+       * ./download/trainer-uuid/course-uuid/lesson-uuid: Folder that contains segments for a specific video
+          * ./download/trainer-uuid/course-uuid/lesson-uuid/segment_[0-9]+.ts: encrypted segments
+          * ./download/trainer-uuid/course-uuid/lesson-uuid/metadata.json: information for this lesson
 
 # downloader.py
 
