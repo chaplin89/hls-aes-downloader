@@ -4,7 +4,7 @@
 
 1. This is a PoC and it doesn't work with any specific website.
 2. This is not meant to break any copyright law but just to show how sensless this protection is.
-3. I'm in no case responsible for the incorrect usage of this tool
+3. I'm in no way responsible for the incorrect usage of this tool
 
 ---
 
