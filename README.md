@@ -1,4 +1,4 @@
-# Introduction
+# hls-aes-downloader
 This is a PoC that shows how it is possible to download a DRM protected video from a website.
 
 This example expect a wesite that provides video-courses and expose the following API:
@@ -25,7 +25,7 @@ The script create files with the following hieararchy:
           * ./download/trainer-uuid/course-uuid/lesson-uuid/segment_[0-9]+.ts: encrypted segments
           * ./download/trainer-uuid/course-uuid/lesson-uuid/metadata.json: information for this lesson
 
-# downloader.py
+## downloader.py
 
 A list of trainers is retrieved from the file trainers.txt and the script iterate over it, over the courses belonging to a specific trainer and finally over the video belonging to a specific course.
 
@@ -35,11 +35,11 @@ The segment's playlist contains also the URI for the key to be used to decrypt t
 
 Key and IV are seved in the same folder of the segments.
 
-# decrypt.py
+## decrypt.py
 
 This script uses the AES key and IV present inside the lesson's folder to decrypt the segments and to merge them in a single file.
 
-# package.py
+## package.py
 
 This script is moving all the files inside a specific folder, preparing them for the final storage.
 
