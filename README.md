@@ -14,7 +14,7 @@ This example expect a wesite that provides video-courses and expose the followin
     * lesson_id: UUID for the specified video
   * Description: Return information about the video with the specified UUID. This includes for example the master playlist, subtitles etc.
 
-# downloader.py: behaviour
+# downloader.py
 
 A list of trainers is retrieved from the file trainers.txt and the script iterate over it, over the courses belonging to a specific trainer and finally over the video belonging to a specific course.
 
@@ -24,11 +24,11 @@ The segment's playlist contains also the URI for the key to be used to decrypt t
 
 Key and IV are seved in the same folder of the segments.
 
-# decrypt.py: behaviour
+# decrypt.py
 
 This script uses the AES key and IV present inside the lesson's folder to decrypt the segments and to merge them in a single file.
 
-# package.py: behaviour
+# package.py
 
 This script is moving all the files inside a specific folder, preparing them for the final storage.
 
