@@ -1,5 +1,14 @@
 # hls-aes-downloader
-This is a PoC that shows how it is possible to download a DRM protected video from a website.
+---
+**Disclaimer**
+
+1. This is a PoC and it doesn't work with any specific website.
+2. This is not meant to break any copyright law but just to show how sensless this protection is.
+3. I'm in no case responsible for the incorrect usage of this tool
+
+---
+
+This is a PoC that shows how it is possible to download a DRM protected video from a video-courses website.
 
 This example expect a wesite that provides video-courses and expose the following API:
 * GET /trainer-uuid
